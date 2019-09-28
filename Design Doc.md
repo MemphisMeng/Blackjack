@@ -18,8 +18,10 @@ The remaining variables are *marker*, *faced* and *belong*. *marker* represents 
 We provide two different constructors, one is no-argument and the other comes with two parameters. The no-arg constructor simply sets the *num*, *rank* and *suit* as default zero. And the other one can help the user customize these three variables. 
 
 We also provide accessors and modifiers. Just note that we will not modify the card's properties so there are no modifiers for *suit*, *rank* and *num*. 
+
+The Card class is in charge of the comparison between the cards. That's why we provide two functions compareTo and sameCard. They are helpful 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NjE0NjM2MiwzMzk4MjgwMzAsLTM4OD
-g5Njk1MSwtMjAxMDQ1MjQ5NiwtMTU1Mjg0MDE1MywtOTk3NTYx
-NzI0LC05MTExNTk2MzcsMTI5ODI5NTg2Ml19
+eyJoaXN0b3J5IjpbOTA3MjM4NTQ5LDMzOTgyODAzMCwtMzg4OD
+k2OTUxLC0yMDEwNDUyNDk2LC0xNTUyODQwMTUzLC05OTc1NjE3
+MjQsLTkxMTE1OTYzNywxMjk4Mjk1ODYyXX0=
 -->
