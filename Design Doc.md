@@ -30,10 +30,10 @@ Players are also of significance to the game. This class does not describe how a
 What is worth noting is *first_hand* and *second_hand*. Both of them are a two-unit-long float-type array. We set the first place of the both to respectively contain the identity/marker of this hand, the second the money bet on this hand. The reason why we only set two hands is that our rule only allows a player to split once, only if their first cards have the same value.
 
 ### Methods
-show_Marker, show_Money and show_
+*show_Marker*, *show_Money* and *show_Name* are just the accessors to certain private variables. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDA2NDYzMSwtMTQxNzQ3MjYzNSwtND
-M0NzE2ODQ5LDMzOTgyODAzMCwtMzg4ODk2OTUxLC0yMDEwNDUy
-NDk2LC0xNTUyODQwMTUzLC05OTc1NjE3MjQsLTkxMTE1OTYzNy
-wxMjk4Mjk1ODYyXX0=
+eyJoaXN0b3J5IjpbMzYyMTUxMTUyLC0xNDE3NDcyNjM1LC00Mz
+Q3MTY4NDksMzM5ODI4MDMwLC0zODg4OTY5NTEsLTIwMTA0NTI0
+OTYsLTE1NTI4NDAxNTMsLTk5NzU2MTcyNCwtOTExMTU5NjM3LD
+EyOTgyOTU4NjJdfQ==
 -->
