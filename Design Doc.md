@@ -22,9 +22,9 @@ We also provide accessors and modifiers. Just note that we will not modify the c
 The Card class is in charge of the comparison between the cards. That's why we provide two functions compareTo and sameCard. They are helpful in some card games.
 
 ## Player
-Players are also of significance to the game. This class does not describe how a gambler ope
+Players are also of significance to the game. This class does not describe how a gambler operate the cards on board. Instead, it mainly takes charge of keeping track of the budget of a player
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyOTI1MzQyNiwtMTQxNzQ3MjYzNSwtND
+eyJoaXN0b3J5IjpbLTk4NzYyMzc3NSwtMTQxNzQ3MjYzNSwtND
 M0NzE2ODQ5LDMzOTgyODAzMCwtMzg4ODk2OTUxLC0yMDEwNDUy
 NDk2LC0xNTUyODQwMTUzLC05OTc1NjE3MjQsLTkxMTE1OTYzNy
 wxMjk4Mjk1ODYyXX0=
