@@ -34,10 +34,10 @@ What is worth noting is *first_hand* and *second_hand*. Both of them are a two-u
 
 *forfeitMoney* and *moneyBack* describe two major changes in term of money. Before a new round gets started, the dealer will ask all the players on board to bet money before (which is conventionally considered as the bet on their first hands later), so that is the only circumstance where a person' money may be deducted. On the other hand, when the player wins, they will take all bets on board into his/her pocket; or when there is a draw, they will get the bet returned. That is the only time when their account would witness an increase.
 
-bet, doubleUp and split are the common movement 
+bet, doubleUp and split are the common actions in the game. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3OTQxMzU4NywtMTQxNzQ3MjYzNSwtND
-M0NzE2ODQ5LDMzOTgyODAzMCwtMzg4ODk2OTUxLC0yMDEwNDUy
-NDk2LC0xNTUyODQwMTUzLC05OTc1NjE3MjQsLTkxMTE1OTYzNy
-wxMjk4Mjk1ODYyXX0=
+eyJoaXN0b3J5IjpbMjYzNjMxNjczLC0xNDE3NDcyNjM1LC00Mz
+Q3MTY4NDksMzM5ODI4MDMwLC0zODg4OTY5NTEsLTIwMTA0NTI0
+OTYsLTE1NTI4NDAxNTMsLTk5NzU2MTcyNCwtOTExMTU5NjM3LD
+EyOTgyOTU4NjJdfQ==
 -->
