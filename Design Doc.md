@@ -34,10 +34,10 @@ What is worth noting is *first_hand* and *second_hand*. Both of them are a two-u
 
 *forfeitMoney* and *moneyBack* describe two major changes in term of money. Before a new round gets started, the dealer will ask all the players on board to bet money before (which is conventionally considered as the bet on their first hands later), so that is the only circumstance where a person' money may be deducted. On the other hand, when the player wins, they will take all bets on board into his/her pocket; or when there is a draw, they will get the bet returned. That is the only time when their account would witness an increase.
 
-*bet*, *doubleUp* and *split* are the common actions in the game. bet and doubleUp helps us decide whether a player is still able to operate (based on his/her remaining money), that's why the returning variable type is boolean. split will come up wi
+*bet*, *doubleUp* and *split* are the common actions in the game. *bet* and *doubleUp* helps us decide whether a player is still able to operate (based on his/her remaining money), that's why the returning variable type is boolean. *split* will update the information in *second_hand*, meaning that the cards are already split.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDkzOTc5NjEsMjYzNjMxNjczLC0xND
-E3NDcyNjM1LC00MzQ3MTY4NDksMzM5ODI4MDMwLC0zODg4OTY5
-NTEsLTIwMTA0NTI0OTYsLTE1NTI4NDAxNTMsLTk5NzU2MTcyNC
-wtOTExMTU5NjM3LDEyOTgyOTU4NjJdfQ==
+eyJoaXN0b3J5IjpbLTQwNDY0NDI3NywyNjM2MzE2NzMsLTE0MT
+c0NzI2MzUsLTQzNDcxNjg0OSwzMzk4MjgwMzAsLTM4ODg5Njk1
+MSwtMjAxMDQ1MjQ5NiwtMTU1Mjg0MDE1MywtOTk3NTYxNzI0LC
+05MTExNTk2MzcsMTI5ODI5NTg2Ml19
 -->
