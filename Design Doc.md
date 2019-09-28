@@ -22,10 +22,12 @@ We also provide accessors and modifiers. Just note that we will not modify the c
 The Card class is in charge of the comparison between the cards. That's why we provide two functions compareTo and sameCard. They are helpful in some card games.
 
 ## Player
-Players are also of significance to the game. This class does not describe how a gambler operate the cards on board. Instead, it mainly takes charge of keeping track of the budget of a player
+Players are also of significance to the game. This class does not describe how a gambler operate the cards on board. Instead, it mainly takes charge of recording the moeny flow of a player. The UML diagram is shown below.
+![UML of class Player](https://drive.google.com/file/d/115M31wAjA5ri2x-SyT28lqUj-eznTyBk/view?usp=drivesdk)
+### 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4NzYyMzc3NSwtMTQxNzQ3MjYzNSwtND
-M0NzE2ODQ5LDMzOTgyODAzMCwtMzg4ODk2OTUxLC0yMDEwNDUy
-NDk2LC0xNTUyODQwMTUzLC05OTc1NjE3MjQsLTkxMTE1OTYzNy
-wxMjk4Mjk1ODYyXX0=
+eyJoaXN0b3J5IjpbLTE0OTA3Mjg2ODEsLTE0MTc0NzI2MzUsLT
+QzNDcxNjg0OSwzMzk4MjgwMzAsLTM4ODg5Njk1MSwtMjAxMDQ1
+MjQ5NiwtMTU1Mjg0MDE1MywtOTk3NTYxNzI0LC05MTExNTk2Mz
+csMTI5ODI5NTg2Ml19
 -->
