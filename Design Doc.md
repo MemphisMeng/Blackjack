@@ -4,8 +4,8 @@ Our program includes 5 classes in total, each of which plays a role in making up
 ## Blackjack
 
 ## Card
-Card is the fundemental component of every card game, without which any game makes no sense. As it is known, there are at least two properties of a card: its suit and its rank. Both of them determines the ranking of a card itself. However
+Card is the fundemental component of every card game, without which any game makes no sense. As it is known, there are at least two properties of a card: its suit and its rank. Both of them determines the ranking of a card itself. However, in some games, for example, Black jack, both the properties don't matter. Rather, peo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM4OTczODE4LC05OTc1NjE3MjQsLTkxMT
+eyJoaXN0b3J5IjpbMjIwOTEzOTM3LC05OTc1NjE3MjQsLTkxMT
 E1OTYzNywxMjk4Mjk1ODYyXX0=
 -->
