@@ -17,9 +17,9 @@ The remaining variables are *marker*, *faced* and *belong*. *marker* represents 
 ### Methods
 We provide two different constructors, one is no-argument and the other comes with two parameters. The no-arg constructor simply sets the *num*, *rank* and *suit* as default zero. And the other one can help the user customize these three variables. 
 
-We also provide accessors and modifiers. Just note that we will not modify the card's properties so there are no modifiers for *suit*, *rank* and *num*.
+We also provide accessors and modifiers. Just note that we will not modify the card's properties so there are no modifiers for *suit*, *rank* and *num*. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTk0MzIzOTAsMzM5ODI4MDMwLC0zOD
-g4OTY5NTEsLTIwMTA0NTI0OTYsLTE1NTI4NDAxNTMsLTk5NzU2
-MTcyNCwtOTExMTU5NjM3LDEyOTgyOTU4NjJdfQ==
+eyJoaXN0b3J5IjpbMTI4NjE0NjM2MiwzMzk4MjgwMzAsLTM4OD
+g5Njk1MSwtMjAxMDQ1MjQ5NiwtMTU1Mjg0MDE1MywtOTk3NTYx
+NzI0LC05MTExNTk2MzcsMTI5ODI5NTg2Ml19
 -->
