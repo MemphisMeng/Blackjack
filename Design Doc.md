@@ -4,8 +4,8 @@ Our program includes 5 classes in total, each of which plays a role in making up
 ## Blackjack
 
 ## Card
-Card is the fundemental component of every card game, without which any game makes no sense. As it is known, 
+Card is the fundemental component of every card game, without which any game makes no sense. As it is known, there are at least two properties of a card
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1MDExMjg0MywtOTExMTU5NjM3LDEyOT
+eyJoaXN0b3J5IjpbLTk5NzU2MTcyNCwtOTExMTU5NjM3LDEyOT
 gyOTU4NjJdfQ==
 -->
