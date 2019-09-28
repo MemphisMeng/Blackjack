@@ -32,10 +32,10 @@ What is worth noting is *first_hand* and *second_hand*. Both of them are a two-u
 ### Methods
 *show_Marker*, *show_Money* and *show_Name* are just the accessors to certain private variables. 
 
-*forfeitMoney* and *moneyBack* describe two major changes in term of money. Before a new round gets started, the dealer will ask all the players on board to bet money before (which is conventionally considered as the bet on their first hands later), 
+*forfeitMoney* and *moneyBack* describe two major changes in term of money. Before a new round gets started, the dealer will ask all the players on board to bet money before (which is conventionally considered as the bet on their first hands later), so that is the only circumstance where a person' money may be deducted. On the other hand, 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDk3NzgwNDEsLTE0MTc0NzI2MzUsLT
-QzNDcxNjg0OSwzMzk4MjgwMzAsLTM4ODg5Njk1MSwtMjAxMDQ1
-MjQ5NiwtMTU1Mjg0MDE1MywtOTk3NTYxNzI0LC05MTExNTk2Mz
-csMTI5ODI5NTg2Ml19
+eyJoaXN0b3J5IjpbMTc4NDExNzA5LC0xNDE3NDcyNjM1LC00Mz
+Q3MTY4NDksMzM5ODI4MDMwLC0zODg4OTY5NTEsLTIwMTA0NTI0
+OTYsLTE1NTI4NDAxNTMsLTk5NzU2MTcyNCwtOTExMTU5NjM3LD
+EyOTgyOTU4NjJdfQ==
 -->
