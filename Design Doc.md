@@ -24,10 +24,11 @@ The Card class is in charge of the comparison between the cards. That's why we p
 ## Player
 Players are also of significance to the game. This class does not describe how a gambler operate the cards on board. Instead, it mainly takes charge of recording the moeny flow of a player. The UML diagram is shown below.
 ![UML of class Player](https://drive.google.com/file/d/115M31wAjA5ri2x-SyT28lqUj-eznTyBk/view?usp=drivesdk)
-### 
+### Variables
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTA3Mjg2ODEsLTE0MTc0NzI2MzUsLT
-QzNDcxNjg0OSwzMzk4MjgwMzAsLTM4ODg5Njk1MSwtMjAxMDQ1
-MjQ5NiwtMTU1Mjg0MDE1MywtOTk3NTYxNzI0LC05MTExNTk2Mz
-csMTI5ODI5NTg2Ml19
+eyJoaXN0b3J5IjpbNjQyNjMxODkyLC0xNDE3NDcyNjM1LC00Mz
+Q3MTY4NDksMzM5ODI4MDMwLC0zODg4OTY5NTEsLTIwMTA0NTI0
+OTYsLTE1NTI4NDAxNTMsLTk5NzU2MTcyNCwtOTExMTU5NjM3LD
+EyOTgyOTU4NjJdfQ==
 -->
