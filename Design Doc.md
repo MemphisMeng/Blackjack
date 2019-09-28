@@ -2,7 +2,11 @@
 Our program includes 5 classes in total, each of which plays a role in making up the entire Blackjack game, as well as extending to some other card games. The four classes are Blackjack, Card, cardGroup, Player, and Board.(main entrance). In the following article we are going to describe the properties and methods designed within each class.
 
 ## Blackjack
-Card is the fundemental component of every card game, without which any game makes no sense. The 
+Card is the fundemental component of every card game, without which any game makes no sense. The UML diagram is below.
+|  |  |
+|--|--|
+|  |  |
+
 ## Card
 
 ### Variables
@@ -14,6 +18,6 @@ The remaining variables are *marker*, *faced* and *belong*. *marker* represents 
 
 ### Methods
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzNTYyMjI1MywtMTU1Mjg0MDE1MywtOT
-k3NTYxNzI0LC05MTExNTk2MzcsMTI5ODI5NTg2Ml19
+eyJoaXN0b3J5IjpbLTEwMzAxNjgyMDcsLTE1NTI4NDAxNTMsLT
+k5NzU2MTcyNCwtOTExMTU5NjM3LDEyOTgyOTU4NjJdfQ==
 -->
