@@ -31,9 +31,11 @@ What is worth noting is *first_hand* and *second_hand*. Both of them are a two-u
 
 ### Methods
 *show_Marker*, *show_Money* and *show_Name* are just the accessors to certain private variables. 
+
+*forfeitMoney* and *moneyBack* describe two major changes in term of money. Before a new round gets started, we
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzYyMTUxMTUyLC0xNDE3NDcyNjM1LC00Mz
-Q3MTY4NDksMzM5ODI4MDMwLC0zODg4OTY5NTEsLTIwMTA0NTI0
-OTYsLTE1NTI4NDAxNTMsLTk5NzU2MTcyNCwtOTExMTU5NjM3LD
-EyOTgyOTU4NjJdfQ==
+eyJoaXN0b3J5IjpbMTk0ODk2NDYzNiwtMTQxNzQ3MjYzNSwtND
+M0NzE2ODQ5LDMzOTgyODAzMCwtMzg4ODk2OTUxLC0yMDEwNDUy
+NDk2LC0xNTUyODQwMTUzLC05OTc1NjE3MjQsLTkxMTE1OTYzNy
+wxMjk4Mjk1ODYyXX0=
 -->
