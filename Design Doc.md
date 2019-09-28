@@ -10,7 +10,7 @@ Card is the fundemental component of every card game, without which any game mak
 ### Variables
 As it is known, there are at least two properties of a card: its *suit* and its *rank*. Both of them determines the ranking of a card itself. However, in some games, for example, Black jack, both the properties don't matter. Rather, people care more about the real value of a card that it really stands for. (e.g. King, Queen and Jack all represents the value of 10, which is no superior to any number card of 10.) Given this scenario, we provide another variable called "*num*", representing the true value of every card in this game while not affecting the extensiveness and re-usability of the class. In addition, in a game the look of a card can never be changed except you are a magician who is able to manipulate the stuff. Thus, it is safe to set all the cards to be unmutable, which is achieved by declaring the variable *suit*, *rank*, *num* **final** and not providing with modifiers/setters of them three.
 
-Meanwhile, we provide three lists: *SUITS*, *RANKS*, and *NUM* each of which contains respectively the index of *suit*, *rank* and *num*. Therefore, when we instanize the 3 integer variables, what we are going to send the indeces and asking the machine to find the object in responding list. 
+Meanwhile, we provide three lists: *SUITS*, *RANKS*, and *NUM* each of which contains respectively the index of *suit*, *rank* and *num*. Therefore, when we instanize the 3 integer variables, what we are going to send the indeces and asking the machine to find the object in responding list. Similar to *suit*, *rank* and *num*, they are supposed to be unchanged, 
 
 The remaining variables are *marker*, *faced* and *belong*. *marker* represents to which card group it  really belongs, since we assume there are more than one deck in Black jack. *faced* keeps track of whther the face of a card is down or up. When it is true, it's up; otherwise, down. *belong* implicates who is having this card now.
 
@@ -19,9 +19,9 @@ We provide two different constructors, one is no-argument and the other comes wi
 
 We also provide accessors and modifiers. Just note that we will not modify the card's properties so there are no modifiers for *suit*, *rank* and *num*. 
 
-The Card class is in charge of the comparison between the cards. That's why we provide two functions compareTo and sameCard. They are helpful 
+The Card class is in charge of the comparison between the cards. That's why we provide two functions compareTo and sameCard. They are helpful in some card games.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA3MjM4NTQ5LDMzOTgyODAzMCwtMzg4OD
-k2OTUxLC0yMDEwNDUyNDk2LC0xNTUyODQwMTUzLC05OTc1NjE3
-MjQsLTkxMTE1OTYzNywxMjk4Mjk1ODYyXX0=
+eyJoaXN0b3J5IjpbLTQzNDcxNjg0OSwzMzk4MjgwMzAsLTM4OD
+g5Njk1MSwtMjAxMDQ1MjQ5NiwtMTU1Mjg0MDE1MywtOTk3NTYx
+NzI0LC05MTExNTk2MzcsMTI5ODI5NTg2Ml19
 -->
