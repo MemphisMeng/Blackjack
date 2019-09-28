@@ -25,10 +25,13 @@ The Card class is in charge of the comparison between the cards. That's why we p
 Players are also of significance to the game. This class does not describe how a gambler operate the cards on board. Instead, it mainly takes charge of recording the moeny flow of a player. The UML diagram is shown below. In this case, as far as we concerned, the class will have good extensiveness.
 ![UML of class Player](https://drive.google.com/file/d/115M31wAjA5ri2x-SyT28lqUj-eznTyBk/view?usp=drivesdk)
 ### Variables
-*name* is no more than an identifier of a player. And *money* resembles the total cash that a customer brings into a casino. What is worth noting is *first_hand* and *second_hand*. Both of them are a two-unit-long float-type array. We set the first place of the both to respectively contain the identity/marker of this hand, the second the money bet on this hand. The reason why we only set two hands is that our rule only allows a player to split once, only if their first cards have the same value.
+*name* is no more than an identifier of a player. And *money* resembles the total cash that a customer brings into a casino. 
+
+What is worth noting is *first_hand* and *second_hand*. Both of them are a two-unit-long float-type array. We set the first place of the both to respectively contain the identity/marker of this hand, the second the money bet on this hand. The reason why we only set two hands is that our rule only allows a player to split once, only if their first cards have the same value.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NDc4MTU5MSwtMTQxNzQ3MjYzNSwtND
+eyJoaXN0b3J5IjpbMTY1MjQ3Mzc2OSwtMTQxNzQ3MjYzNSwtND
 M0NzE2ODQ5LDMzOTgyODAzMCwtMzg4ODk2OTUxLC0yMDEwNDUy
 NDk2LC0xNTUyODQwMTUzLC05OTc1NjE3MjQsLTkxMTE1OTYzNy
 wxMjk4Mjk1ODYyXX0=
