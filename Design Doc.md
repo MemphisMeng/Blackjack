@@ -10,8 +10,8 @@ Card is the fundemental component of every card game, without which any game mak
 
 Meanwhile, we provide three lists: *SUITS*, *RANKS*, and *NUM* each of which contains respectively the index of *suit*, *rank* and *num*. Therefore, when we instanize the 3 integer variables, what we are going to send the indeces and asking the machine to find the object in responding list. 
 
-The remaining variables are *marker*, *faced* and *belong*. marker represents to which card group it  really belongs, 
+The remaining variables are *marker*, *faced* and *belong*. *marker* represents to which card group it  really belongs, since we assume there are more than one deck in Black jack. *faced* keeps track of whther the face of a card is down or
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1MDM0MjQ5OSwtMTU1Mjg0MDE1MywtOT
-k3NTYxNzI0LC05MTExNTk2MzcsMTI5ODI5NTg2Ml19
+eyJoaXN0b3J5IjpbNjMxMjIwNTI3LC0xNTUyODQwMTUzLC05OT
+c1NjE3MjQsLTkxMTE1OTYzNywxMjk4Mjk1ODYyXX0=
 -->
