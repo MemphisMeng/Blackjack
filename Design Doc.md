@@ -19,7 +19,9 @@ Meanwhile, we provide three lists: *SUITS*, *RANKS*, and *NUM* each of which con
 The remaining variables are *marker*, *faced* and *belong*. *marker* represents to which card group it  really belongs, since we assume there are more than one deck in Black jack. *faced* keeps track of whther the face of a card is down or up. When it is true, it's up; otherwise, down. *belong* implicates who is having this card now.
 
 ### Methods
+We provide two different constructors, one if no-argument and the other comes with 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTA0NTI0OTYsLTE1NTI4NDAxNTMsLT
-k5NzU2MTcyNCwtOTExMTU5NjM3LDEyOTgyOTU4NjJdfQ==
+eyJoaXN0b3J5IjpbMTE2MzQ0ODAyOCwtMjAxMDQ1MjQ5NiwtMT
+U1Mjg0MDE1MywtOTk3NTYxNzI0LC05MTExNTk2MzcsMTI5ODI5
+NTg2Ml19
 -->
