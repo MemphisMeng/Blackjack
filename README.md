@@ -149,14 +149,19 @@ Now you have 2 dollars.
 ‘’********************************************       
 
 The card of you is
+
 ClubQueen.
+
 Spade10.
 
 ‘’********************************************         
 
 Player Jim now make your move.
+
 1.hit
+
 2.double up
+
 3.stand
 
 ‘’********************************************         
@@ -198,12 +203,15 @@ Player Jim now you have 2 dollars.
 ‘’********************************************       
 
 New turn begin
+
 Player Jack is your turn.
 
 ‘’********************************************       
 
 The card of you is
+
 Diamond3.
+
 ClubJack.
 
 ‘’********************************************        
@@ -221,6 +229,7 @@ Please make your bet.**0**
 ‘’********************************************        
 
 New turn begin
+
 Player Jim is your turn.
 
 ‘’********************************************       
@@ -242,5 +251,5 @@ Please make your bet.
 4. When a player wins, he/she can get the bet on each hand of cards in the current round doubled back as a bonus. For example, player X claims a win in round when he bet $200 on each of his hands, then he could get $800 in total back.
 5. A game can be played by 5 five human users at maximum. They can quit the game at their will whenever a round is over.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDUzOTU3NjgsMjAxMjA1NTU4OF19
+eyJoaXN0b3J5IjpbMTk4ODAyOTE3NF19
 -->
