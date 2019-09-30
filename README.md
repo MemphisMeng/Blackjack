@@ -119,54 +119,67 @@ Now you can't bet anymore as you run out of your money.
 
 Player Jim is your turn.
 Now you have 2 dollars.
+
 ‘’********************************************       
 
 The card of you is
 ClubQueen.
 Spade10.
+
 ‘’********************************************         
 
 Player Jim now make your move.
 1.hit
 2.double up
 3.stand
+
 ‘’********************************************         
 
 **3**
+
 ‘’********************************************        
 
 Player's round ends. Now is dealer's round.
+
 ‘’********************************************         
 
 ‘’********************************************       
 
 The card of Dealer is Club7.
+
 ‘’********************************************     
 
 The card of Dealer is Heart4.
+
 ‘’*******************************************       
 
 The card of Dealer is Diamond6.
+
 ‘’********************************************       
 
 The winner is DEALER.%n
+
 ‘’********************************************       
 
 ‘’********************************************      
  
 Player Jack now you have 0 dollars.
+
 ‘’********************************************       
 
 Player Jim now you have 2 dollars.
+
 ‘’********************************************       
 
 New turn begin
 Player Jack is your turn.
+
 ‘’********************************************       
 
 The card of you is
 Diamond3.
 ClubJack.
+
 ‘’********************************************        
 
 Please make your bet.**2**
@@ -174,15 +187,18 @@ Sorry, you can only use money you have.
 Please make your bet.**1**
 Sorry, you can only use money you have.
 Please make your bet.**0**
+
 ‘’********************************************        
 
 New turn begin
 Player Jim is your turn.
+
 ‘’********************************************       
 
 The card of you is
 HeartAce.
 Diamond9.
+
 ‘’********************************************        
 
 Please make your bet.
@@ -194,6 +210,5 @@ Please make your bet.
 4. When a player wins, he/she can get the bet on each hand of cards in the current round doubled back as a bonus. For example, player X claims a win in round when he bet $200 on each of his hands, then he could get $800 in total back.
 5. A game can be played by 5 five human users at maximum. They can quit the game at their will whenever a round is over.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzg5MDE0NDAsLTE4ODQzNzE1MzZdfQ
-==
+eyJoaXN0b3J5IjpbMTk5MjkxMTIzMl19
 -->
