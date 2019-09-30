@@ -70,8 +70,11 @@ ClubKing.
 ‘’********************************************      
 
 Player Jack now make your move.
+
 1.hit
+
 2.double up
+
 3.stand
 
 ‘’********************************************       
@@ -85,6 +88,7 @@ Now you can't bet anymore as you run out of your money.
 ‘’********************************************       
 
 Player Jack is your second hand's turn.
+
 Now you have 0 dollars.
 
 ‘’********************************************      
@@ -102,11 +106,17 @@ Player Jack now make your move.
 ‘’********************************************      
 
 **1**
+
 The card of you is
+
 SpadeKing.
+
 Heart6.
+
 Please make your bet.**1**
+
 Sorry, you can only use money you have.
+
 Please make your bet.**0**
 
 ‘’********************************************        
@@ -216,5 +226,5 @@ Please make your bet.
 4. When a player wins, he/she can get the bet on each hand of cards in the current round doubled back as a bonus. For example, player X claims a win in round when he bet $200 on each of his hands, then he could get $800 in total back.
 5. A game can be played by 5 five human users at maximum. They can quit the game at their will whenever a round is over.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NDE1NTkwNCwxOTkyOTExMjMyXX0=
+eyJoaXN0b3J5IjpbMjAxMjA1NTU4OF19
 -->
