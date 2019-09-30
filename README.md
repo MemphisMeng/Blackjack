@@ -10,28 +10,36 @@ Enjoy winning money!
 Welcome to BlackJack1.0
 How many player do you have?**2**
 ‘’**********************************************  
+
 Player 1, please enter your name.**Jack**
 
  How many money will you bet?**3**
 ‘’********************************************         
+
 Player 2, please enter your name.**Jim**
 
  How many money will you bet?**3**
 ‘’********************************************      
+
 New turn begin
 Player Jack is your turn.
 ‘’********************************************         
+
 The card of you is
 SpadeKing.
 ClubKing.
 ‘’********************************************        
+
 Please make your bet.**1**
 ‘’********************************************        
+
 Do you want to split?(Y/N)?**y**
 ‘’********************************************      
+
 New turn begin
 Player Jim is your turn.
 ‘’********************************************       
+
 The card of you is
 ClubQueen.
 Spade10.
@@ -166,5 +174,5 @@ Please make your bet.
 4. When a player wins, he/she can get the bet on each hand of cards in the current round doubled back as a bonus. For example, player X claims a win in round when he bet $200 on each of his hands, then he could get $800 in total back.
 5. A game can be played by 5 five human users at maximum. They can quit the game at their will whenever a round is over.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDk4MjI4NzQsODQwNjM0ODAwXX0=
+eyJoaXN0b3J5IjpbNTY2MjYzMTcwXX0=
 -->
