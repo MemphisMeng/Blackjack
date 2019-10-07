@@ -1,7 +1,6 @@
 package blackjack;
 
 import java.util.Scanner;
-
 /**
  * 
  * @author Yicheng Li (U29503597)
@@ -30,34 +29,15 @@ class BlackJackBoard {
 		cardgroup = new CardGroup();
 		System.out.println("********************************************");
 		System.out.println("Welcome to BlackJack1.0");
-		System.out.printf("How many players do you have?");
-		boolean valid_number = false;
-		while (!valid_number || num <= 0 || num > 9) {
-			String number; //Make sure the input here is integer
-			number = sc.next();
-			if (number.matches("[0-9]+")) {
-				num = Integer.valueOf(number);
-				if (num <= 0 || num > 9) {
-					System.out.println("Sorry, the input should a number between 1~9.");
-					System.out.println("Please input again:");
-				}
-				else {
-					valid_number = true;
-				}
+		System.out.printf("How many player do you have?");
+		do {
+			num = sc.nextInt();
+			if(num <= 0||num > 5)
+			{
+				System.out.println("Sorry, the number of players should be between 1~5.");
+				System.out.printf("Please input again:");
 			}
-			else {
-				System.out.println("Sorry, the input should a number between 1~9.");
-				System.out.println("Please input again:");
-			}
-		}
-//		do {
-//			num = sc.nextInt();
-//			if(num <= 0||num > 9)
-//			{
-//				System.out.println("Sorry, the number of players should be between 1~9.");
-//				System.out.printf("Please input again:");
-//			}
-//		}while(num <= 0||num > 9);
+		}while(num <= 0||num > 5);
 		this.player_num = num;
 		player_stand = new int[2 * num];
 		player = new Player[num];
@@ -65,42 +45,20 @@ class BlackJackBoard {
 			System.out.println("********************************************");
 			System.out.printf("Player %d, please enter your name.",i + 1);
 			name = sc.next();
-			System.out.printf("%n How much money will you bet?");
-			valid_number = false;
-			while ((!valid_number) || bets <= 0 || bets > 10000) {
-				String number; //Make sure the input here is integer
-				number = sc.next();
-				if (number.matches("[0-9]+")) {
-					bets = Integer.valueOf(number);
-					if (bets <= 0 || bets > 10000) {
-						System.out.println("Sorry, the number of money should be between 1~10000.");
-						System.out.print("Please input again:");
-					}
-					else {
-						valid_number = true;
-					}
-				}
-				else {
+			System.out.printf("%n How many money will you bet?");
+			do {
+				bets = sc.nextInt();
+				if(bets <= 0||bets > 10000)
+				{
 					System.out.println("Sorry, the number of money should be between 1~10000.");
-					System.out.print("Please input again:");
+					System.out.printf("Please input again:");
 				}
-			}
-			
-//			do {
-//				bets = sc.nextInt();
-//				if(bets <= 0||bets > 10000)
-//				{
-//					System.out.println("Sorry, the number of money should be between 1~10000.");
-//					System.out.printf("Please input again:");
-//				}
-//			}while(bets <= 0||bets > 10000);
+			}while(bets <= 0||bets > 10000);
 			player[i] = new Player(name,bets,(float) i);
 		}
 	}
-	
 	protected void round_start() {
 		Scanner sc = new Scanner(System.in);
-		// respectively stands for the 1st and 2nd hand of any player
 		for(int i = 0; i < 2 * this.player_num; i = i + 2) {
 			this.player_stand[i] = 0;
 			this.player_stand[i + 1] = 1;
@@ -108,58 +66,30 @@ class BlackJackBoard {
 		for(int i = 0; i < this.player_num;i++) {
 			float marker[][] = player[i].show_Marker();
 			System.out.println("********************************************");
-			System.out.println("New turn begins.");
+			System.out.println("New turn begin");
+			System.out.printf("Player %s is your turn.%n",player[i].show_Name());
 			System.out.println("********************************************");
-			System.out.printf("Player %s, now is your turn.%n",player[i].show_Name());
 			cardgroup.start_player(marker[0][0]);
 			cardgroup.show_player(marker[0][0]);
 			System.out.println("********************************************");
-			System.out.printf("Please make your bet:");
-			boolean valid_bet = false;
-			int bet = 0;
-			while (!valid_bet) {
-				String _bet;//Make sure the input here is integer
-				_bet = sc.next();
-				if (_bet.matches("[0-9]+")) {
-					bet = Integer.valueOf(_bet);
-					valid_bet = true;
-				}
-				else {
-					System.out.println("Sorry, you should input a number.");
-					System.out.println("Please input again:");
-				}
-			}
-			while(player[i].bet(marker[0][0], bet) == false) {
+			System.out.print("Please make your bet.");
+			while(player[i].bet(marker[0][0], sc.nextInt()) == false) {
 				System.out.println("Sorry, you can only use money you have.");
 				System.out.print("Please make your bet.");
 			}
 			if(cardgroup.check_split(marker[0][0])) {
 				System.out.println("********************************************");
 				System.out.print("Do you want to split?(Y/N)?");
-				String answer = sc.next();
-				boolean valid_input = false;
-				while (!valid_input) {
-					if (answer.equalsIgnoreCase("yes")|| answer.equalsIgnoreCase("no")) {
-						valid_input = true;
-					}
-					else {
-						System.out.print("Invalid input! Please type again!");
-					}
-				}
-				if (answer.equalsIgnoreCase("yes")) {
+				switch (sc.next().charAt(0)) {
+				case 'Y':
 					player[i].split(cardgroup.split((float) i));
 					this.player_stand[i * 2 + 1] = 0;
+					break;
+				case 'y':
+					player[i].split(cardgroup.split((float) i));
+					this.player_stand[i * 2 + 1] = 0;
+					break;
 				}
-//				switch (sc.next().charAt(0)) {
-//				case 'Y':
-//					player[i].split(cardgroup.split((float) i));
-//					this.player_stand[i * 2 + 1] = 0;
-//					break;
-//				case 'y':
-//					player[i].split(cardgroup.split((float) i));
-//					this.player_stand[i * 2 + 1] = 0;
-//					break;
-//				}
 			}
 		}
 		cardgroup.start_dealer();
@@ -185,32 +115,12 @@ class BlackJackBoard {
 		System.out.println("3.stand");
 		System.out.println("********************************************");
 		int choice = 0;
-		boolean valid_input = false;
-		while (!valid_input || choice <1 || choice > 3) {
-			String _choice;
-			//Make sure the input here is integer
-			_choice = sc.next();
-			if (_choice.matches("[0-9]+") ) {
-				choice = Integer.valueOf(_choice);
-				if (choice <1 || choice > 3) {
-					System.out.println("Sorry, you can only input integers between 1~3.");
-					System.out.print("Please input again:");
-
-				}
-				else {
-					valid_input = true;
-				}
+		do {
+			choice = sc.nextInt();
+			if(choice <1 || choice > 5) {
+				System.out.println("Sorry, you can only input integers between 1~5.");
 			}
-			else {
-				System.out.println("Invalid number input! Please type again!");
-			}
-		}
-//		do {
-//			choice = sc.nextInt();
-//			if(choice <1 || choice > 3) {
-//				System.out.println("Sorry, you can only input integers between 1~3.");
-//			}
-//		}while(choice <1 || choice > 3);
+		}while(choice <1 || choice > 5);
 		switch(choice) {
 		case 1 :
 			if(cardgroup.hit_player(marker) == false) {
@@ -225,21 +135,7 @@ class BlackJackBoard {
 					this.stand(marker);
 				}
 				System.out.print("Please make your bet.");
-				boolean valid_bet = false;
-				int bet = 0;
-				while (!valid_bet) {
-					String _bet; //Make sure the input here is integer
-					_bet = sc.next();
-					if (_bet.matches("[0-9]+")) {
-						bet = Integer.valueOf(_bet);
-						valid_bet = true;
-					}
-					else {
-						System.out.println("Sorry, you should input a number.");
-						System.out.println("Please input again:");
-					}
-				}
-				while(player[i].bet(marker, bet) == false) {
+				while(player[i].bet(marker, sc.nextInt()) == false) {
 					System.out.println("Sorry, you can only use money you have.");
 					System.out.print("Please make your bet.");
 				}
@@ -262,7 +158,7 @@ class BlackJackBoard {
 			float mark[][] = player[i].show_Marker();
 			System.out.println("********************************************");
 			System.out.println("Now you can't bet anymore as you run out of your money.");
-			if(player_stand[2 * i + 1] == 0) {
+			if(player_stand[2 * i] == 0) {
 				stand(mark[0][0]);
 				stand(mark[1][0]);
 			}
@@ -270,7 +166,6 @@ class BlackJackBoard {
 				stand(mark[0][0]);
 			}
 		}
-
 	}
 	/**
 	 * Add the player to a list that players want to stand
@@ -304,11 +199,11 @@ class BlackJackBoard {
 			for(int i = 0; i < this.show_number(); i++) {
 				if(player[i].show_Money() == 0) {
 					if(player[i].if_second() == NOTUSE) {
-						this.stand((float) (2*i));
+						this.stand((float) i);
 					}
 					else {
-						this.stand((float) (2*i));
-						this.stand((float) (2*i + 1));
+						this.stand((float) i);
+						this.stand((float) (i + 0.5));
 					}
 				}
 				if(player[i].if_second() == NOTUSE) {
@@ -325,7 +220,7 @@ class BlackJackBoard {
 				else {
 					if(player_stand[2 * i] == 0) {
 						System.out.println("********************************************");
-						System.out.printf("Player %s now is your first hand's turn.%n",player[i].show_Name());
+						System.out.printf("Player %s is your first hand's turn.%n",player[i].show_Name());
 						System.out.printf("Now you have %d dollars.%n",player[i].show_Money());
 						System.out.println("********************************************");
 						float marker[][]=player[i].show_Marker();
@@ -342,9 +237,9 @@ class BlackJackBoard {
 						move(i,marker[1][0]);
 					}
 				}
-				if(check_stop() == true) {
-					label = false;
-				}
+			}
+			if(check_stop() == true) {
+				label = false;
 			}
 		}
 		System.out.println("********************************************");
@@ -413,59 +308,14 @@ class BlackJackBoard {
 	 * The method that ends one round
 	 */
 	protected void round_end() {
-		Scanner sc = new Scanner(System.in);
-		int n = 0; // Record the amount of the gamblers who run out of their money
 		for(int i = 0 ;i < this.player_num; i++) {
 			player[i].clearBet();
 			System.out.println("********************************************");
 			System.out.printf("Player %s",player[i].show_Name());
-			System.out.println(" now you have " + Integer.toString((player[i].show_Money())) + " dollars.");
+			System.out.printf(" now you have %d dollars.%n",player[i].show_Money());
 		}
 		cardgroup.shuffle();
-		
-		for (int i = 0; i < this.player_num; i++) {
-			if (player[i].show_Money() == 0) {
-				n++;
-			}
-		}
-		if (n != 0) { // Somebody loses all his/her money.
-			if (n == this.show_number()) { // Everybody loses all his/her money.
-				System.out.println("********************************************");
-				System.out.println("No one on table still has money. Game over!");
-				System.out.println("Thank you for playing! See you next time!");
-			}
-			else {
-				for (int i = 0; i < this.player_num; i++) {
-					if (player[i].show_Money() != 0)  {
-						System.out.println("********************************************");
-						System.out.printf("Do you still wanna play, %s?(Y/N)",player[i].show_Name());
-						
-						String answer = sc.next();
-						boolean valid_input = false;
-						while (!valid_input) {
-							if (answer.equalsIgnoreCase("yes")|| answer.equalsIgnoreCase("no")) {
-								valid_input = true;
-							}
-							else {
-								System.out.print("Invalid input! Please type again!");
-							}
-						}
-						if (answer.equalsIgnoreCase("yes")) {
-							continue;
-						}
-						else {
-							remove_player(this.player_num, player, player_stand, i);
-						}	
-					}
-					
-					else {
-						remove_player(this.player_num, player, player_stand, i);
-					}
-				}
-			}
-		}
 	}
-	
 	protected boolean still_play() {
 		for(int i = 0; i < this.player_num; i++) {
 			if(player[i].show_Money() != 0) {
@@ -473,25 +323,5 @@ class BlackJackBoard {
 			}
 		}
 		return false;
-	}
-	
-	protected void remove_player(int length, Player[] p, int[] ps, int index) {
-		Player[] currentPlayers = new Player[length - 1];
-		int[] current_player_stand = new int[2*(length - 1)];
-		for (int k = 0; k < length - 1; k++) {
-			if (k < index) {
-				currentPlayers[k] = p[k];
-				current_player_stand[2*k] = ps[2*k];
-				current_player_stand[2*k + 1] = ps[2*k + 1];
-			}
-			else {
-				currentPlayers[k] = p[k + 1];
-				current_player_stand[2*k] = ps[2*(k + 1)];
-				current_player_stand[2*k + 1] = ps[2*(k + 1)];
-			}
-		}
-		player = currentPlayers;
-		player_stand = current_player_stand;
-		this.player_num--;
 	}
 }
