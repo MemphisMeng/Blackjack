@@ -95,18 +95,18 @@ The winner is DEALER.%n
 '********************************************     
 
 Player Jim now you have $0.    
-********************************************
-Player Tim now you have $8.
-********************************************
+
+'********************************************     
+
+Player Tim now you have $8.    
+
+'********************************************     
+
 
 Please make your bet.
 
 ## Rules
-1. If and only if a player (not dealer) encounter two cards with the same rank, they have the option to split. So at most they have two hands of cards.
-2. No budget limit for a dealer. 
-3. When a player loses, his/her bet will be forfeited.
-4. When a player wins, he/she can get the bet on each hand of cards in the current round doubled back as a bonus. For example, player X claims a win in round when he bet $200 on each of his hands, then he could get $800 in total back.
-5. A game can be played by 5 five human users at maximum. They can quit the game at their will whenever a round is over.
+Most details are based on the specifications published on the blackboard. Based on the our u
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNzQ0MDQxNCwxOTg4MDI5MTc0XX0=
+eyJoaXN0b3J5IjpbLTY3OTczNTQzOSwxOTg4MDI5MTc0XX0=
 -->
