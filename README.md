@@ -40,16 +40,13 @@ Heart 4.
 
 Please make your bet.**1**
 
+The first card of Dealer is Heart 7.
+
 ‘’********************************************        
 
-Do you want to split?(Y/N)?**y**
 
-‘’********************************************      
-
-New turn begin
-
-Player Jim is your turn.
-
+New turn begins
+Player Jim, now is your  first turn.
 ‘’********************************************       
 
 The card of you is
@@ -250,5 +247,5 @@ Please make your bet.
 4. When a player wins, he/she can get the bet on each hand of cards in the current round doubled back as a bonus. For example, player X claims a win in round when he bet $200 on each of his hands, then he could get $800 in total back.
 5. A game can be played by 5 five human users at maximum. They can quit the game at their will whenever a round is over.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4OTA2MjI2NCwxOTg4MDI5MTc0XX0=
+eyJoaXN0b3J5IjpbNTg0NDg0MTgzLDE5ODgwMjkxNzRdfQ==
 -->
