@@ -106,7 +106,7 @@ Player Tim now you have $8.
 Please make your bet.
 
 ## Rules
-Most details are based on the specifications published on the blackboard. Based on the our understanding towards the requirements and our research of the game, we simply define that whoever that has the most money at present is the dealer/banker at the current stage. But we also provide a chance to the new dealer, asking him/her wherther or not willing to be the dealer. If no, we just move
+Most details are based on the specifications published on the blackboard. Based on the our understanding towards the requirements and our research of the game, we simply define that whoever that has the most money at present is the dealer/banker at the current stage. But we also provide a chance to the new dealer, asking him/her wherther or not willing to be the dealer. If no, we just shift it to the player who is the closest next to him/her.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5ODk0NjkwMSwxOTg4MDI5MTc0XX0=
+eyJoaXN0b3J5IjpbLTEwNDk1NzE4NzIsMTk4ODAyOTE3NF19
 -->
