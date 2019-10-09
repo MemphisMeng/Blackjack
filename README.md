@@ -106,7 +106,7 @@ Player Tim now you have $8.
 Please make your bet.
 
 ## Rules
-Most details are based on the specifications published on the blackboard. Based on the our u
+Most details are based on the specifications published on the blackboard. Based on the our understanding towards the requirements and our research of the game, we simply define the deal
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3OTczNTQzOSwxOTg4MDI5MTc0XX0=
+eyJoaXN0b3J5IjpbMTE2Nzk5ODU0MSwxOTg4MDI5MTc0XX0=
 -->
