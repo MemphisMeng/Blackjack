@@ -1,0 +1,281 @@
+package blackjack;
+
+import java.util.Random;
+/**
+ * @author Yicheng Li (U29503597)
+ */
+public class CardGroup {
+	/**
+	 * The set of cards.
+	 * Mainly include the operation of cards.
+	 */
+	public static float NOONE = -2;
+	public static float DEALER = -1;
+	public static float MAX = 31;
+	/**
+	 * The static final variable imply the marker of dealer.
+	 * 
+	 */
+	Card card[];
+	/**
+	 * The constructor of CardGroup will create a set of 52 cards and randomize them.
+	 */
+	CardGroup() {
+		int number[]={1,2,3,4,5,6,7,8,9,10,11,12,13};  
+        String suit[]={"Spade","Heart","Diamond","Club"};  
+		card = new Card[52];
+		for(int i = 0;i < 52;i++) {
+			card[i] = new Card(number[i%13],suit[i/13]);
+		}
+		this.shuffle();
+	}
+	/**
+	 * To deliver the first two cards to one player.
+	 * @param marker implies the owner of those two cards.
+	 */
+	protected void start_player(float marker) {
+		int j = 0;
+		for(int i = 0;i < 52; i++) {
+			if(j == 2) {
+				break;
+			}
+			if(card[i].get_marker() == NOONE) {
+				j++;
+				card[i].set_marker(marker);
+			}
+		}
+	}
+	/**
+	 * As the method above, deliver the first two cards to dealer
+	 * However, this would show the first card of dealer.
+	 */
+	protected void start_dealer() {
+		int j = 0;
+		int i = 0;
+		for(i = 0;i < 52; i++) {
+			if(card[i].get_marker() == NOONE && j == 0) {
+				j++;
+				card[i].set_marker(DEALER);
+				card[i].getFaced();
+			}
+			if(card[i].get_marker() == NOONE && j == 1) {
+				card[i].set_marker(DEALER);
+				break;
+			}
+		}
+		System.out.print("The first card of Dealer is ");
+		System.out.printf(card[i - 1].get_suit());
+		if(card[i - 1].show_num() == 11) {
+			System.out.printf("Jack.%n");
+		}
+		else if(card[i - 1].show_num() == 12) {
+			System.out.printf("Queen.%n");
+		}
+		else if(card[i - 1].show_num() == 13) {
+			System.out.printf("King.%n");
+		}
+		else {
+			System.out.printf("%d.%n",card[i - 1].show_num());
+		}
+	}
+	/**
+	 * This method the total value of one's cards.
+	 * Especially for card Ace will choose the value that have more chance to win.
+	 * @param marker implies the owner of the cards.
+	 */
+	protected int show_value(float marker) {
+		int sum = 0;
+		int ace = 0;
+		for(int i = 0;i < 52; i++) {
+			if(card[i].get_marker() == marker && card[i].show_num() > 10) {
+				sum = sum + 10;
+				continue;
+			}
+			else if(card[i].get_marker() == marker && card[i].show_num() == 1) {
+				ace++;
+				continue;
+			}
+			else if(card[i].get_marker() == marker) {
+				sum = sum + card[i].show_num();
+				continue;
+			}
+		}
+		while(ace != 0) {
+			if(sum + ace * 11 <= MAX) {
+				sum = + ace * 11;
+				break;
+			}
+			else {
+				sum = sum + 1;
+				ace--;
+			}
+		}
+		return sum;
+	}
+	/**
+	 * The method will be call when the player wants to hit.
+	 * @param marker implies the player's marker.
+	 */
+	protected boolean hit_player(float marker) {
+		int sum = 0;
+		int ace = 0;
+		for(int i = 0;i < 52; i++) {
+			if(card[i].get_marker() == marker && card[i].show_num() > 10) {
+				sum = sum + 10;
+				continue;
+			}
+			else if(card[i].get_marker() == marker && card[i].show_num() == 1) {
+				ace++;
+				continue;
+			}
+			else if(card[i].get_marker() == marker) {
+				sum = sum + card[i].show_num();
+				continue;
+			}
+			else if(card[i].get_marker() == NOONE && card[i].show_num() > 10) {
+				card[i].set_marker(marker);
+				sum = sum + 10;
+				break;
+			}
+			else if(card[i].get_marker() == NOONE && card[i].show_num() == 1) {
+				card[i].set_marker(marker);
+				ace++;
+				break;
+			}
+			else if(card[i].get_marker() == NOONE) {
+				card[i].set_marker(marker);
+				sum = sum + card[i].show_num();
+				break;
+			}
+		}
+		while(ace != 0) {
+			if(sum + ace * 11 <= MAX) {
+				return true;
+			}
+			else {
+				sum = sum + 1;
+				ace--;
+			}
+		}
+		if(sum > MAX) {
+			return false;
+		}
+		return true;
+	}
+	/**
+	 * The same as the method above when dealer's total value is less than 17.
+	 */
+	protected void hit_dealer() {
+		for(int i = 0;i < 52; i++) {
+			if(card[i].get_marker() == NOONE) {
+				card[i].set_marker(DEALER);
+				break;
+			}
+		}
+	}
+	
+	/**
+	 * Shows the cards of dealer.
+	 */
+	protected void show_dealer() {
+		for(int i = 0;i < 52; i++) {
+			if(card[i].get_marker() == DEALER) {
+				System.out.println("********************************************");
+				System.out.printf("The card of Dealer is ");
+				System.out.printf(card[i].get_suit());
+				if(card[i].show_num() == 11) {
+					System.out.printf(" Jack.%n");
+				}
+				else if(card[i].show_num() == 12) {
+					System.out.printf(" Queen.%n");
+				}
+				else if(card[i].show_num() == 1) {
+					System.out.printf(" Ace.%n");
+				}
+				else if(card[i].show_num() == 13) {
+					System.out.printf(" King.%n");
+				}
+				else {
+					System.out.printf(" %d.%n",card[i].show_num());
+				}
+			}
+		}
+	}
+	/**
+	 * Shows the card of one player.
+	 * @param marker implies the owner of the cards.
+	 */
+	protected void show_player(float marker) {
+		System.out.printf("The card of you is%n");
+		for(int i = 0;i < 52; i++) {
+			if(card[i].get_marker() == marker) {
+				System.out.printf(card[i].get_suit());
+				if(card[i].show_num() == 11) {
+					System.out.printf(" Jack.%n");
+				}
+				else if(card[i].show_num() == 12) {
+					System.out.printf(" Queen.%n");
+				}
+				else if(card[i].show_num() == 13) {
+					System.out.printf(" King.%n");
+				}
+				else if(card[i].show_num() == 1) {
+					System.out.printf(" Ace.%n");
+				}
+				else {
+					System.out.printf(" %d.%n",card[i].show_num());
+				}
+			}
+		}
+	}
+	/**
+	 * The necessary method to check if the player can split before splitting 
+	 * @param marker implies who you want to check
+	 * @return true when the player can split
+	 */
+	protected boolean check_split(float marker) {
+		float num = (float)-1;
+		for(int i = 0; i < 52; i++) {
+			if(marker == card[i].get_marker()) {
+				if(num == (float)-1) {
+					num = card[i].show_num();
+				}
+				else if(card[i].show_num() == num){
+					return true;
+				}
+				else {
+					break;
+				}
+			}
+		}
+		return false;
+	}
+	/**
+	 * The method that split cards
+	 * @param marker implies the operator of splitting
+	 * @return the new marker of the same player
+	 */
+	protected float split(float marker) {
+		float new_marker = marker + (float)0.5;
+		for(int i = 0;i < 52; i++) {
+			if(card[i].get_marker() == marker) {
+				card[i].set_marker(new_marker);
+				break;
+			}
+		}
+		return new_marker;
+	}
+	protected void shuffle() {
+		Random rd = new Random();  
+		for(int i=0;i<52;i++) {
+			card[i].set_marker(NOONE);
+		}
+		for(int i=0;i<52;i++)  
+        {  
+            int j = rd.nextInt(52);//生成随机数  
+            Card temp = card[i];//交换  
+            card[i]=card[j];  
+            card[j]=temp;  
+        } 
+	}
+}
